@@ -7,10 +7,10 @@
 Please note, this code is only for python 3+. If you are using python 2+, please modify the code accordingly.
 """
 from __future__ import print_function
-from sklearn import svm
+from sklearn.svm import SVC
 from sklearn import datasets
 
-clf = svm.SVC()
+clf = SVC()
 iris = datasets.load_iris()
 X, y = iris.data, iris.target
 clf.fit(X, y)
